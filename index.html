@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body id="arka_plan" >
+    <div class="container">
+        <header>
+            <div>
+                <h1 id="title">Melodrama Survey Form</h1>
+                <p id="description">Platformumuzu geliştirmek için sunduğunuz katkıdan dolayı teşekkür ederiz</p>
+            </div>
+        </header>
+    <div class="container">
+        <form action="" id="survey-form" style="background-color: rgb(222, 184, 135, 0.3); ">
+            <div class="row">
+                <div class="div">
+                    <label id="name-label" for="name">Name</label>
+                </div>
+                <div>
+                    <input type="text" name="firstname" id="name" placeholder="Your name..." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="div">
+                    <label for="sname">Surname</label>
+                </div>
+                <div>
+                    <input type="text" name="surname" id="sname" placeholder="Your Surname...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="div">
+                    <label id="number-label" for="age">Age (Optional)</label>
+                </div>
+                <div>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+                </div>
+            </div>
+            <div class="row">
+                <div class="div">
+                    <label id="email-label" for="email">email</label>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="div">
+                    <label for="role">Which option best describes your current role?</label>
+                </div>
+                <div>
+                    <select name="role" id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="">Full time job</option>
+                        <option value="">Full time learner</option>
+                        <option value="">Prefer not to say</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label>Would you recommend freeCodeCamp to a friend?</label>
+                <label for="recommed-1">
+                    <input type="radio" name="recommed" id="recommed-1" value="Definitely" checked>"Definitely"
+                </label>
+                <label for="recommed-2">
+                    <input type="radio" name="recommed" id="recommed-2" value="Maybe">"Maybe"
+                </label>
+                <label for="recommed-3">
+                    <input type="radio" name="recommed" id="recommed-3" value="Not sure">"Not sure"
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label>What would you like to see improved?
+                    <small>(Check all that apply)</small>
+                </label>
+
+                <label for="inp-1">
+                    <input type="checkbox" name="inp" value="front-edn"> Front-end Projects
+                </label>
+                <label for="inp-2">
+                    <input type="checkbox" name="inp" value="Back-end Projects"> Back-end Projects
+                </label>
+                <label for="inp-3">
+                    <input type="checkbox" name="inp" value="chall"> Challenges
+                </label>
+                <label for="inp-4">
+                    <input type="checkbox" name="inp" value="open"> Open Source Community
+                </label>
+                <label for="inp-5">
+                    <input type="checkbox" name="inp" value="gitter"> 
+                    Gitter help rooms
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp" value="videos"> Videos
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp" value="city-mee"> City Meetups
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp" value="wiki"> Wiki
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp" value="forum"> Forum
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp" value="adition"> Additional Courses
+                </label>
+            </div>
+            
+            <div class="form-control">
+                <label for="comment">
+                    Any comments or suggestions
+                </label>
+                <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+                </textarea>
+                <button id="submit" type="submit" value="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
